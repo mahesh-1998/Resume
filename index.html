@@ -1,24 +1,65 @@
 <html>
 
     <head>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+       <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">  
+        
         <link rel="stylesheet" href="styles.css">
     </head>
 
-    <body class="center">
-        <div class="header">
-            <a href="http://api.html2pdfrocket.com/pdf?value=https://mahesh-1998.github.io/Resume/&apikey=e6ce9b6d-8ed5-4562-bdc0-e9b26d5720d9"><button class="button button1">Save Resume</button></a>
-            <strong><h3>MAHESH VASANT KAMBLE</h3></strong>
-            <p >Mob. No: +91-9762501815</p>
-            <p>Email: <a href="mailto: maheshvkamble674@gmail.com">maheshvkamble674@gmail.com</a> </p>
-            <p> LinkedIn: <a href="https://www.linkedin.com/in/mahesh-kamble">www.linkedin.com/in/mahesh-kamble</a></p>
-        </div>
+    <body>
 
-        <hr>
+        <div class="container">
 
-        <div class=body>
+            <div class="row col-12 col-md-12 col-sm-6">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Mahesh Kamble</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#education">Academics</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#professional">Professional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                          <a href="http://api.html2pdfrocket.com/pdf?value=https://mahesh-1998.github.io/Resume/&apikey=e6ce9b6d-8ed5-4562-bdc0-e9b26d5720d9"><button class="button button1">Save Resume</button></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+            
+            
+           
+           
+            
+            
+
+            <hr>
 
             <strong><h3>Career Objective: </h3></strong>
             <p>To work for an organization which provides me the opportunity to utilize and improve my skills and knowledge to growth along with the organization.</p>
+
+            <hr>
 
             <strong><h3>Professional Strengths: </h3></strong>
             <ul>
@@ -26,29 +67,33 @@
                 <li>Hard working, Flexible, Patient and Self-motivated personality.</li>
                 <li>Quick Learner.</li>
                 <li>A Good Team Player.</li>
+                
             </ul>
 
             <hr>
             
             <strong><h3>Technical Skills: </h3></strong>
 
-            <table class="table">
+            <table class="table table-hover table-striped table-bordered ">
+                <tbody>
                     <tr>
-                        <td> <strong> Programming Language </strong> </td>
-                        <td> C, C++, Java, Python</td>
+                      <th scope="col">Programming Language</th>
+                      <td> Java, JavaScript, Python</td>
                     </tr>
+
                     <tr>
-                        <td> <strong> Application Framework </strong> </td>
-                        <td> Django, Eclipse,Android Studio, Spring</td>
-                    </tr>
-                    <tr>
-                        <td> <strong> Databases </strong> </td>
-                        <td> MySQL, PostgreSQL, MongoDB, SQLite</td>
-                    </tr>
-                    <tr>
-                        <td> <strong> Operating Systems </strong> </td>
-                        <td> C, C++, Java, Python</td>
-                    </tr>
+                        <th scope="col">Application Framework</th>
+                        <td> Spring MVC , Spring Boot, React-JS</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="col">Databases</th>
+                        <td> MySQL, PostgreSQL, MongoDB, Redis, Amazon DynamoDB</td>
+                      </tr>
+
+                     
+                </tbody>
+                   
             </table>
 
             <br>
@@ -63,6 +108,7 @@
 
             <hr>
 
+            <div id="education">
             <strong><h3>Educational Qualification: </h3></strong>
             <ul>
                 <li>Bachelors of Engineering - Computer Science</li>
@@ -70,28 +116,65 @@
             </ul>
 
             <hr>
+        </div>
 
+            <div id="projects" class="row"> 
             <strong><h3>Projects: </h3></strong>
+            
+            <div class="col-sm-12 col-md-4">
+            <div class="card" >
+                <img class="card-img-top" src="1.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Restaurant Web Application</h5>
+                  <p class="card-text">Technology stack - HTML, CSS, Bootstrap3, JavaScript.</p>
+                  <a href="https://mahesh-1998.github.io/Bootstrap4-Live/" class="btn btn-primary">Live Demo</a>
+                </div>
+              </div>
+            </div>
 
-            <h4>Restaurant Web Application</h4>
-            <p>Technology stack - HTML, CSS, Bootstrap3, JavaScript.
-            <p><a href="https://mahesh-1998.github.io/Bootstrap4-Live/">Live Demo</a></p>
+            <div class="col-sm-12 col-md-4">
+              <div class="card" >
+                <img class="card-img-top" src="2.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Student Management Web Application</h5>
+                  <p class="card-text">Technology stack - HTML, CSS, Bootstrap3, JavaScript, Django, Python, PostgreSQL.</p>
+                  <a href="http://maheshk.pythonanywhere.com/" class="btn btn-primary">Live Demo</a>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-sm-12 col-md-4">
+              <div class="card" >
+                <img class="card-img-top" src="3.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Weather forecasting Web Application</h5>
+                  <p class="card-text">Technology stack - Django, Postgis, Leaflet.js</p>
+                  <a href="https://github.com/mahesh-1998/WeatherApp" class="btn btn-primary">Live Demo</a>
+                 
+                </div>
+              </div>
+            </div>
             <hr>
-
-            <h4>Student Management Web Application</h4>
-            <p>Technology stack - HTML, CSS, Bootstrap3, JavaScript, Django, Python, PostgreSQL.
-            <p><a href="http://maheshk.pythonanywhere.com/">Live Demo</a></p>
+        </div> 
+        <section class="jumbotron text-center">
+            <div id="contact" class="container">
+              <h1 class="jumbotron-heading">About</h1>
+              <p class="lead text-muted"> 
+                  
+                1+ years of experience in developing Java and J2EE , extensive knowledge of Spring Boot, React.
             
-            <hr>
             
-            <h4>Weather forecasting Web Application</h4>
-            <p>Technology stack - Django, Postgis, Leaflet.js</p>
-            <p><a href="https://github.com/mahesh-1998/WeatherApp">Live Demo</a></p>
+              <p>
+                     
+            <a href="https://www.linkedin.com/in/mahesh-kamble" class="fa fa-linkedin"></a>
+            <a href="https://github.com/mahesh-1998" class="fa fa-github"></a>
+            <a href="mailto: maheshvkamble674@gmail.com" class="fa fa-google"></a>
+              </p>
+            </div>
+          </section>
+      
 
-            
-
-
+        </div>
 
         </div>
         
